@@ -1,7 +1,7 @@
 import pandas as pd
 from django.core.management.base import BaseCommand
 from django.db import transaction
-from api.models import Autor
+from api.models import Editoras
 
 class Command(BaseCommand):
     def add_arguments(self, parser):
@@ -16,35 +16,36 @@ class Command(BaseCommand):
         # normaliza os nomes das colunas: tira espaços extras, deixa em minúsculo e remove o ufeff
         # o \ufeff é um caractere especial invisível
         
-        if o["truncate"]: Autor.objects.all().delete()
+        if o["truncate"]: Editoras.objects.all().delete()
         
-        df['autor'] = df['autor'].astype(str).str.strip()
-        df['s_autor'] = df['s_autor'].astype(str).str.strip()
-        df['nasc'] = pd.to_datetime(df["nasc"], errors="coerce", format="%Y-%m-%d").dt.date
-        df['nacio'] = df.get('nacio',"").astype(str).str.strip().str.capitalize().replace({"": None})
-        
-    
+        df['nome'] = df['nome'].astype(str).str.strip()
+        df['cnpj'] = df['cnpj'].astype(str).str.strip()
+        df['endereco'] = pd.to_datetime(df["endereco"], errors="coerce", format="%Y-%m-%d").dt.date
+        df['email'] = df.get('email',"").astype(str).str.strip()
+        df['site'] = df.get('site',"").astype(str).str.strip()
+        df['telefone'] = df.get('telefone',"").astype(str).str.strip()
+
         
         if o["update"]:
             criados = atualizados = 0
             for r in df.itertuples(index=False):
-                _, created = Autor.objects.update_or_create(
-                    autor = r.autor, s_autor= r.s_autor, nasc =r.nasc, 
-                    defaults={'nacio': r.nacio}
+                _, created = Editoras.objects.update_or_create(
+                    nome = r.nome, cnpj = r.cnpj, endereco = r.endereco,
+                    telefone = r.telefone, email = r.email, site = r.site,  
+
                 )
                 
                 criados += int(created)
                 atualizados += int(not created)
             self.stdout.write(self.style.SUCCESS(f'Criados: {criados} | Atualizados: {atualizados}'))
         else:
-            objs = [Autor(
-                autor = r.autor, s_autor= r.s_autor, nasc =r.nasc, nacio = r.nacio
+            objs = [Editoras(
+                    nome = r.nome, cnpj = r.cnpj, endereco = r.endereco,
+                    telefone = r.telefone, email = r.email, site = r.site,  
             ) for r in df.itertuples(index=False)
             ]
-            
-            Autor.objects.bulk_create(objs, ignore_conflicts=True)
-            # bulk_create está jogando no banco os dados sem conflito
             
             self.stdout.write(self.style.SUCCESS(f'Criadodos: {len(objs)}'))
                 
         # autor,s_autor,nasc,nacio
+        
