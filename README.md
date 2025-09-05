@@ -72,7 +72,7 @@ Clone este repositório:
 
 ###
 ```powershell
-git clone (nome_do_arquivo)
+git clone https://github.com/Kauan19-hub/Library-SENAI.git
 ```
 
 
