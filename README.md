@@ -6,13 +6,13 @@ Feat: Initial setup with `env` virtual environment, automatic spreadsheets and o
 
 ###
 
-✅ Env development;
-✅ Installation of libraries: pandas and openpyxl for data manipulation and table creation with Excel;
-✅ Folder structure in Insonmia or Postman for API testing;
-✅ Automation scripts for generating spreadsheet readings using pandas and openpyxl;
-✅ File and directory organization;
-✅ Examples of how to use Django and JSON for API integration;
-✅ Documentation explaining the project .
+✅ Env development;<br>
+✅ Installation of libraries: pandas and openpyxl for data manipulation and table creation with Excel;<br>
+✅ Folder structure in Insonmia or Postman for API testing;<br>
+✅ Automation scripts for generating spreadsheet readings using pandas and openpyxl;<br>
+✅ File and directory organization;<br>
+✅ Examples of how to use Django and JSON for API integration;<br>
+✅ Documentation explaining the project.<br>
 
 ---
 
