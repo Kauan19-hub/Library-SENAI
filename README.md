@@ -55,7 +55,7 @@ source env/bin/activate ## MacOS/Linux
 ###
 ```python
 var1 = dir (link)  ## xlsx table path 
-var2 = pd.read_csv(variavel)  ## Call the path in another variable 
+var2 = pd.read_csv(var)  ## Call the path in another variable 
 
 print(file.head()) ## Start of spreadsheet 
 print(file.shape()) ## Middle of the spreadsheet 
