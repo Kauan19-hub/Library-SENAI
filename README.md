@@ -54,14 +54,14 @@ source env/bin/activate ## MacOS/Linux
 
 ###
 ```python
-variavel1 = diretório (link)  ## xlsx table path 
-variavel2 = pd.read_csv(variavel)  ## Call the path in another variable 
+var1 = dir (link)  ## xlsx table path 
+var2 = pd.read_csv(variavel)  ## Call the path in another variable 
 
-print(arquivo.head()) ## Start of spreadsheet 
-print(arquivo.shape()) ## Middle of the spreadsheet 
-print(arquivo.dtypes()) ## End of spreadsheet 
+print(file.head()) ## Start of spreadsheet 
+print(file.shape()) ## Middle of the spreadsheet 
+print(file.dtypes()) ## End of spreadsheet 
 
-arquivo_caminho = r'T:\ (full path of files) 
+path_file = r'T:\ (full path of files) 
 print('Currently Used Directory :', os.getcwd())   ## Remember to import the  (OS) - import os
 print('This file exists?', os.path.isfile(arquivo_caminho)  ## if exist, print 'TRUE', else, 'FALSE'
 ```
