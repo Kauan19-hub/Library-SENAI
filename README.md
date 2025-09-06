@@ -1,26 +1,26 @@
-**<h2>🖥️ API desenvolvida em Python e Django</h2>**
+**<h2>🖥️ API developed in Python and Django </h2>**
 
 ###
 
-Feat: Setup inicial com ambiente virtual `env`, planilhas automáticas e projetos organizados!
+Feat: Initial setup with `env` virtual environment, automatic spreadsheets and organized projects! 
 
 ###
 
-✅ Desenvolvimento da `env`;<br>
-✅ Instalaçao de bibliotecas: `pandas` e `openpyxl` para manipulação de dados e criação de tabelas com Excel;<br>
-✅ Estrutura de pastas no Insonmia ou Postman para testes de API;<br>
-✅ Scripts voltados para automação com objetivo de gerar leituras de planilhas pelo `pandas` + `openpyxl`;<br>
-✅ Organização de arquivos e diretórios;<br>
-✅ Exemplos de como usar o `Django` e o `JSON` para integração com APIs;<br>
-✅ Documentação explicando sobre o projeto.
+✅ Env development;
+✅ Installation of libraries: pandas and openpyxl for data manipulation and table creation with Excel;
+✅ Folder structure in Insonmia or Postman for API testing;
+✅ Automation scripts for generating spreadsheet readings using pandas and openpyxl;
+✅ File and directory organization;
+✅ Examples of how to use Django and JSON for API integration;
+✅ Documentation explaining the project .
 
 ---
 
-Automação de plailhas usando o `pandas` e `openpyxl`
+Spreadsheet automation using `pandas` and `openpyxl` 
 
 ###
 
-Criação do ambiente virtual:
+Creation of the virtual environment: 
 
 ###
 ```powershell
@@ -38,37 +38,37 @@ source env/bin/activate ## MacOS/Linux
 
 ---
 
-**<h2>🥇 Organização:</h2>**
+**<h2>🥇 Organization:</h2>**
 
 ###
 
-- `planilhas/`: Possui arquivos `.xlsx` gerados;
-- `scripts/`: scripts para automação de planilhas;
-- `api/`: Exemplo de API com Django.
+- `planilhas/`: Has files  `.xlsx` gerados;
+- `scripts/`: scripts for automations of spreadsheet;
+- `api/`: Example of API with Django.
 
 ---
 
 ###
 
-**<h2>💡 Dica rápida:</h2>**
+**<h2>💡 Quick tip :</h2>**
 
 ###
 ```python
-variavel1 = diretório (link)  ## Caminho da tabela xlsx
-variavel2 = pd.read_csv(variavel)  ## Chama o caminho em uma outra variável
+variavel1 = diretório (link)  ## xlsx table path 
+variavel2 = pd.read_csv(variavel)  ## Call the path in another variable 
 
-print(arquivo.head()) ## Início da planilha
-print(arquivo.shape()) ## Meio da planilha
-print(arquivo.dtypes()) ## Final da planilha
+print(arquivo.head()) ## Start of spreadsheet 
+print(arquivo.shape()) ## Middle of the spreadsheet 
+print(arquivo.dtypes()) ## End of spreadsheet 
 
-arquivo_caminho = r'T:\ (caminho completo dos arquivos)
-print('Diretório Usado Atualmente:', os.getcwd())   ## Lembre-se de importar o (OS) - import os
-print('Esse arquivo existe?', os.path.isfile(arquivo_caminho)  ## Se existir, imprime 'TRUE', senão, 'FALSE'
+arquivo_caminho = r'T:\ (full path of files) 
+print('Currently Used Directory :', os.getcwd())   ## Remember to import the  (OS) - import os
+print('This file exists?', os.path.isfile(arquivo_caminho)  ## if exist, print 'TRUE', else, 'FALSE'
 ```
 
 ---
 
-Clone este repositório:
+Clone this repository: 
 
 ###
 ```powershell
