@@ -84,20 +84,6 @@ git clone https://github.com/Kauan19-hub/Library-SENAI.git
 
 ---
 
-**<h3>- Back-End</h3>**
-
-###
-
-<div align="left">
-  <img src="https://skillicons.dev/icons?i=py" height="30" alt="python logo"  title="Python" />
-  <img width="2" />
-  <img src="https://skillicons.dev/icons?i=django" height="30" alt="django logo" title="Django" />
-  <img width="2" />
-  <img src="https://skillicons.dev/icons?i=mysql" height="30" alt="mysql logo" title="MySQL | SQL"  />
-</div>
-
-###
-
 **<h3>- Front-End</h3>**
 
 ###
@@ -110,6 +96,26 @@ git clone https://github.com/Kauan19-hub/Library-SENAI.git
   <img src="https://skillicons.dev/icons?i=tailwind" height="30" alt="tailwindcss logo" title="TailwindCSS" />
   <img width="2" />
   <img src="https://skillicons.dev/icons?i=nodejs" height="30" alt="nodejs logo" title="Node.JS"  />
+  <img width="2" />
+  <img src="https://skillicons.dev/icons?i=html" height="30" alt="html5 logo" title="HTML5"  />
+  <img width="2" />
+  <img src="https://skillicons.dev/icons?i=css" height="30" alt="css logo" title="CSS3" />
+  <img width="2" />
+  <img src="https://skillicons.dev/icons?i=react" height="30" alt="react logo" title="React" />
+</div>
+
+###
+
+**<h3>- Back-End</h3>**
+
+###
+
+<div align="left">
+  <img src="https://skillicons.dev/icons?i=py" height="30" alt="python logo"  title="Python" />
+  <img width="2" />
+  <img src="https://skillicons.dev/icons?i=django" height="30" alt="django logo" title="Django" />
+  <img width="2" />
+  <img src="https://skillicons.dev/icons?i=mysql" height="30" alt="mysql logo" title="MySQL | SQL"  />
 </div>
 
 ###
