@@ -1,4 +1,4 @@
-**<h2>🖥️ Python and Django </h2>**
+**<h2>🖥️ Area Project</h2>**
 
 ###
 
