@@ -1,4 +1,4 @@
-**<h2>🖥️ API developed in Python and Django </h2>**
+**<h2>🖥️ Python and Django </h2>**
 
 ###
 
