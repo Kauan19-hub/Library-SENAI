@@ -170,7 +170,6 @@ Issues and contributions are welcome! Feel free to suggest improvements or contr
 
 ---
 
-daada
 ```pgsql
    👤 User
        │
