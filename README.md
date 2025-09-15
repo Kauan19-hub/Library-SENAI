@@ -1,8 +1,33 @@
-**<h2>🖥️ Area Project</h2>**
+**<h2>🖥️ Area Project - Library</h2>**
 
 ###
 
-Feat: Initial setup with `env` virtual environment, automatic spreadsheets and organized projects! 
+✨ Feat: Initial setup with `env` virtual environment, automatic spreadsheets and organized projects! 
+
+###
+
+**<h2>🔗 Connection Back-End ↔ Front-End</h2>**
+
+- The Back-End (`API`) provides data in format JSON - (Documentation);
+- The Front-End consumes this data via requests `HTTP` using `fetch` or `axios`.
+
+---
+
+`endpoint` example:
+
+###
+```js
+GET http://localhost:3000/api/livros
+```
+
+Consumes example in the Front-End
+
+###
+```js
+fetch("http://localhost:3000/api/livros")
+  .then(res => res.json())
+  .then(data => console.log(data));
+```
 
 ###
 
@@ -11,6 +36,8 @@ Feat: Initial setup with `env` virtual environment, automatic spreadsheets and o
 ✅ Folder structure in Insonmia or Postman for API testing;<br>
 ✅ Automation scripts for generating spreadsheet readings using pandas and openpyxl;<br>
 ✅ File and directory organization;<br>
+✅ Using Front-End and Back-End<br>
+✅ Examples with Node.JS and Angular.JS<br>
 ✅ Examples of how to use Django and JSON for API integration;<br>
 ✅ Documentation explaining the project.<br>
 
@@ -73,14 +100,109 @@ Clone this repository:
 ###
 ```powershell
 git clone https://github.com/Kauan19-hub/Library-SENAI.git
+cd Library-SENAI
 ```
 
 ###
 
-- **Interpreter**: `Python 3:13 version`;
-- **Run Code**: `Py manage.py runserver`;
-- **Dependences**: `pip install -r requirements.txt` | `Django Rest Framework` | `Django`;
-- **Tools**: [Insomnia](https://insomnia.rest/download) and/or [Postman](https://www.postman.com/downloads/)
+Back-End (`Node.js` + `Express`)
+
+###
+```powershell
+cd backend
+npm install
+npm start
+```
+
+###
+
+Front-End (`Angular` or `React`)
+
+###
+```powershell
+cd frontend
+npm install
+npm start
+```
+
+###
+
+API `Django` (Optional)
+
+###
+```powershell
+cd api
+pip install -r requirements.txt
+python manage.py runserver
+```
+
+###
+
+**<h2>📌 Versions</h2>**
+
+###
+
+- Python: `3.13`;
+- Node.js: `node -v`;
+- NPM: `npm -v`.
+
+###
+
+**<h2>📌 Main Dependencies:</h2>**
+
+###
+
+- `pandas`, `openpyxl`;
+- `Django Rest Framework`;
+- `Express`.
+
+###
+
+**Tools for Tests**: [Insomnia](https://insomnia.rest/download) and/or [Postman](https://www.postman.com/downloads/)
+
+---
+
+**<h2>🤝 Contributions**
+
+###
+
+Issues and contributions are welcome! Feel free to suggest improvements or contribute to the project!
+
+---
+
+daada
+```pgsql
+   👤 User
+       │
+       ▼
+ ┌─────────────────────────────┐
+ │      Front-End (UI)         │
+ │  Angular / React / HTML+CSS │
+ └─────────────────────────────┘
+       │   Requisition HTTP
+       │  (GET, POST, PUT, DELETE)
+       ▼
+ ┌─────────────────────────────┐
+ │    Back-End (API REST)      │
+ │  Node.js + Express / Django │
+ │  Endpoints: /api/livros     │
+ └─────────────────────────────┘
+       │    SQL Queries
+       ▼
+ ┌─────────────────────────────┐
+ │     Data Base (DB)          │ 
+ │ MySQL / PostgreSQL / SQLite │
+ └─────────────────────────────┘
+       ▲
+       │   Datas (JSON Response)
+       │
+       └───────────────────────────────→ Back to Front-End
+```
+
+###
+
+The flow of the application follows the model below: the user interacts through the Front-End, which consumes the data via API (Back-End),
+responsible for processing and querying the database. The response is sent in JSON, displayed again in the interface.
 
 ---
 
@@ -134,7 +256,6 @@ git clone https://github.com/Kauan19-hub/Library-SENAI.git
   <img src="https://skillicons.dev/icons?i=postman" height="30" alt="postman logo" title="Postman" />
 </div>
 
-###
 
 
 
