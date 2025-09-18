@@ -4,12 +4,14 @@ import { Observable } from "rxjs";
 import { Autor } from "../models/autor";
 import { environments } from "../environments/environments";
 
-@Injectable({providedIn: 'root'})
-export class AutoresService{
+@Injectable ({providedIn: 'root'})
+export class AutoresService {
     private http = inject(HttpClient)
     private base = environments.apiBase
-    listar(): Observable<Autor[]>{
-        const url = `${this.base}/api/autores/`;
-        return this.http.get<Autor[]>(url)
+
+    listar(): Observable < Autor [] > {
+        const url = `${this.base}/api/autores/`
+        return this.http.get < Autor [] > (url)
+
     }
 }
