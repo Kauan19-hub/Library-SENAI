@@ -1,12 +1,9 @@
-<header>
-  <nav style="background-color: #008000;
-              display: flex; border-radius: 9px; padding: 10px; gap: 2rem; align-items: center; font-family: Arial, Helvetica, sans-serif;">
-    <a routerlink="/" style="cursor: pointer; color: #f0f8ff;">Início</a>
-    <a routerlink="/autores" style="cursor: pointer; color: #f0f8ff;">Autores</a>
-    <a routerlink="/editoras" style="cursor: pointer; color: #f0f8ff;">Editoras</a>
-    <a routerlink="/livros" style="cursor: pointer; color: #f0f8ff;">Livros</a>
-    <button style="cursor: pointer; border-radius: 5px;">Sair</button>
+<header style="border-bottom:1px solid #eee">
+  <nav style="max-width:900px;margin:0 auto;padding:1rem;display:flex;gap:1rem;align-items:center">
+    <a routerLink="/">Início</a>
+    <a routerLink="/autores">Autores</a>
+    <span style="flex:1"></span>
+    <button (click)="logout()" style="padding:.4rem .7rem;border:1px solid #ddd;border-radius:8px;background:#fff">Sair</button>
   </nav>
 </header>
-
 <main><router-outlet></router-outlet></main>

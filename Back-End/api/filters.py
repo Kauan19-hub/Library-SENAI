@@ -1,4 +1,3 @@
-
 ########### Caso queira um filtro duplo ################################
 import django_filters as df
 from django.db.models import Q

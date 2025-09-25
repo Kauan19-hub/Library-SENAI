@@ -1,9 +1,8 @@
 export interface Autor {
-    id: number;
-    autor: string;
-    s_autor: string;
-    nasc?: string | null;
-    nascio?: string | null;
-    biogr?: string | null;
-    
+  id: number;
+  nome: string;
+  sobrenome: string;
+  data_nascimento?: string | null;
+  nacionalidade?: string | null;
+  biografia?: string | null;
 }

@@ -47,13 +47,10 @@
               "outputHashing": "all"
             },
             "development": {
-              "optimization": false,
-              "extractLicenses": false,
-              "sourceMap": true,
               "fileReplacements": [
                 {
-                  "replace": "src/app/environments/environments.ts",
-                  "with": "src/app/environments/environment.development.ts"
+                  "replace": "src/app/environments/environment.ts",
+                  "with": "src/app/environments/environment.ts"
                 }
               ]
             }
@@ -94,6 +91,6 @@
     }
   },
   "cli": {
-    "analytics": "5bbf98e8-df09-4663-bf97-ea38241e9167"
+    "analytics": "53f1b3ad-1f45-4a38-b3a8-b5d3405b28e4"
   }
 }
