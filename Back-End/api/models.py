@@ -1,27 +1,27 @@
 from django.db import models
 from django.core.validators import MaxValueValidator, MinValueValidator
 
-#classe para o autor do livro
 class Autor(models.Model):
     autor = models.CharField(max_length=100)
-    surname = models.CharField(null=True, blank=True)
-    birthdate = models.DateField(null=True, blank=True)
-    nationality = models.CharField(max_length=50, null=True)
-    bio = models.TextField()
-
+    s_autor = models.CharField(max_length=100) 
+    nasc = models.DateField(null=True, blank=True)
+    nacio = models.CharField(max_length=50, null=True, blank=True)
+    biogr = models.TextField()
+    
     def __str__(self):
-        return f"{self.autor} {self.surname}"
-
+        return f'{self.autor} {self.s_autor}'
+    
 class Editora(models.Model):
     editora = models.CharField(max_length=100)
     cnpj = models.CharField(max_length=18, unique=True, null=True, blank=True)    
     endereco = models.CharField(max_length=200, null=True, blank=True) 
     telefone = models.CharField(max_length=20, null=True, blank=True) 
     email = models.EmailField(null=True, blank=True) 
-    site = models.URLField(null=True, blank=True) 
+    site = models.URLField(null=True, blank=True)
     
     def __str__(self):
         return self.editora
+    
     
 class Livro(models.Model):
     titulo = models.CharField(max_length=50)

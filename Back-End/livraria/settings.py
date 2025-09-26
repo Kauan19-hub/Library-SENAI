@@ -1,22 +1,13 @@
 from pathlib import Path
 from datetime import timedelta
 
-# Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
+SECRET_KEY = 'django-insecure-x35irypa-5_w)beo_di@syr!qw6v4^3)om5g#4nh-0u%&uj^%&'
 
-# Quick-start development settings - unsuitable for production
-# See https://docs.djangoproject.com/en/5.2/howto/deployment/checklist/
-
-# Alerta de Segurança: mantenha em segredo a chave secreta usada na produção!
-SECRET_KEY = 'django-insecure-xbvt=prz(5&jdt)!x!4#b_60st5&)-7y56k(r-vp*#xxi@1r9)'
-
-# Alerta de Segurança: não rode o código com o debug ligado na produção!
 DEBUG = True
 
 ALLOWED_HOSTS = []
-
-# Definição das applicações
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -28,8 +19,8 @@ INSTALLED_APPS = [
     'api',
     'rest_framework',
     'rest_framework_simplejwt',
+    "corsheaders",
 ]
-
 
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': (
@@ -38,12 +29,13 @@ REST_FRAMEWORK = {
 }
 
 SIMPLE_JWT = {
-    "ACCESS_TOKEN_LIFETIME": timedelta(minutes=20),
+    "ACCESS_TOKEN_LIFETIME": timedelta(minutes=1),
     "REFRESH_TOKEN_LIFETIME": timedelta(days=1),
 }
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
+    "corsheaders.middleware.CorsMiddleware",
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -53,6 +45,8 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'livraria.urls'
+
+CORS_ALLOW_ALL_ORIGINS = True
 
 TEMPLATES = [
     {
